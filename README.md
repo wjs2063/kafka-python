@@ -20,6 +20,8 @@ Kafka base code
 
 docker pull apache/kafka
 
+docker run -p 9092:9092 apache/kafka:[version]
+
 python -m pip install kafka-python
 python -m pip install aiokafka
 
