@@ -17,7 +17,7 @@ async def produce(text: str):
     return {"response": f"send synchronously {text}"}
 
 
-@app.get("/kafka-consumer")
+@app.get("/kafka-consume")
 async def consume():
     print("consumer started!")
     consumer = AIOKafkaConsumer("foobar", "foobar1", bootstrap_servers='localhost:9092', group_id="123")
